@@ -78,7 +78,7 @@ body {
     background-color: var(--primary-color);
     background-image: url(images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100vw;
     height: 100vh;
   
@@ -146,8 +146,13 @@ footer {
 }
 /* -----------------------------Footer-------------------------------- */
 @media screen and (min-width:767px) {
-  header .logo img{
+header .logo img{
     height: 5rem;
+}
+body{
+  background-image: url(images/bg-desktop.svg);
+  background-size: initial;
+  height: 100vh;
 }
 }
 
