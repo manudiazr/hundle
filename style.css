@@ -1,0 +1,205 @@
+/* ------------------------global styles------------------------------------ */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color:hsl(257,40%,49%);
+    --secondary-color:#ffffff;
+    --headings-font:'Poppins', sans-serif;
+    --body-font:'Open Sans', sans-serif;
+}
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  }
+.main-container {
+  max-width: 80vw;
+  margin: 0 auto;
+}      
+
+/* ------------------------global styles------------------------------------ */
+/* ---------------------------icon---------------------------------------- */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ubb13a');
+  src:  url('fonts/icomoon.eot?ubb13a#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ubb13a') format('truetype'),
+    url('fonts/icomoon.woff?ubb13a') format('woff'),
+    url('fonts/icomoon.svg?ubb13a#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+  
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+  padding: 0.6rem;
+  margin: 0 0.5rem;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.main-container {
+  max-width: 80vw;
+  margin: 0 auto;
+}      
+/* ---------------------------icon---------------------------------------- */
+/* --------------------------Header--------------------------------------- */
+header {
+  padding: 2.5rem 0;
+  
+}
+header .logo img{
+    height: 4rem;
+}
+/* --------------------------Header--------------------------------------- */
+/* ---------------------------Body---------------------------------------- */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+    background-color: var(--primary-color);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  
+}
+.mockups {
+  width: 80vw;
+  max-width: 67.2rem;
+  margin: 3.5rem 0;
+
+}
+.text-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 50rem;
+  
+}
+main h1, main p {
+  color: var(--secondary-color);
+  text-align: center;
+  margin: 2rem 0;
+}
+main h1 {
+  font-family: var(--headings-font);
+  font-size: 2.5rem;
+  font-weight: 700;
+  
+}
+main p {
+ font-family: var(--body-font);
+ font-size: 1.5rem;
+}
+.button {
+  background-color: var(--secondary-color);
+  width: 22rem;
+  height: 4.5rem;
+  border-radius: 2.5rem;
+  border: none;
+  font-family: var(--headings-font);
+  color: var(--primary-color);
+  box-shadow: 0.2rem 0.2rem 0.5rem hsl(257deg 45% 20%);
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+.button:hover {
+  background-color:#E551D2 ;
+  color: #ffffff;
+}
+/* ---------------------------Body---------------------------------------- */
+/* -----------------------------Footer-------------------------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  margin:3rem;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+/* -----------------------------Footer-------------------------------- */
+@media screen and (min-width:767px) {
+  header .logo img{
+    height: 5rem;
+}
+}
+
+@media screen and (min-width:1023px) {
+  body{
+    background-image: url(images/bg-desktop.svg);
+    background-size: initial;
+    height: 100vh;
+  }
+  .main-container {
+    max-width: 144.4rem;
+    width: 90.8vw;
+  }
+  main {
+    justify-content: space-between;
+    align-items: center;
+    height: 75vh;
+  }
+  main h1, main p {
+    text-align: left;
+  }
+  main h1 {
+    font-size: 3.5rem;
+    /* font-weight: 400; */
+  }
+  main p {
+    font-size: 1.6rem;
+  }
+  
+  .mockups {
+    width: 50vw;
+  }
+  .content-box{
+    width: 35%;
+    margin-right: 4rem;
+  }
+  .text-container{
+    justify-content: flex-start ;
+    font-size: 1.5rem;
+  }
+  .button{
+    width: 18rem;
+    font-size: 1.5rem;
+  }
+  
+
+  footer {
+    justify-content: flex-end;
+    margin:0;
+  }
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: 2rem;
+  }
+
+}
